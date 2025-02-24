@@ -1,18 +1,17 @@
 package stepsDefinitions;
 
-import java.util.Map;
-
-import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-
 import factory.BaseClass;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
+
+import java.util.Map;
 
 
 public class RegistrationSteps {

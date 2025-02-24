@@ -1,14 +1,14 @@
 package utilities;
 
-import java.io.FileInputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class DataReader {
 	
@@ -44,5 +44,4 @@ public class DataReader {
 			e.printStackTrace();
 		}
 		return mydata;
-	}
-}
+	}}

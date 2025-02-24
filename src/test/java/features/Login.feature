@@ -14,7 +14,7 @@ Feature: Login with Valid Credentials
     And the user clicks on the Login button
     Then the user should be redirected to the MyAccount Page
 
-    Examples: 
-      | email                	    | password |
-      | pavanol@gmail.com 	      | test123  |
+    Examples:
+      | email                     | password |
+      | pavanol@gmail.com         | test123  |
       | pavanoltraining@gmail.com | test@123 |

@@ -1,19 +1,18 @@
 package stepsDefinitions;
 
-import java.util.HashMap;
-import java.util.List;
-
-import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-
 import factory.BaseClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.MyAccountPage;
 import utilities.DataReader;
+
+import java.util.HashMap;
+import java.util.List;
 
 public class LoginSteps {
      WebDriver driver;
