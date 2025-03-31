@@ -76,7 +76,6 @@ public class AccountRegistrationPage extends BasePage {
 
 		public void clickContinue() {
 			btnContinue.click();
-
 		}
 
 		public String getConfirmationMsg() {
@@ -84,11 +83,6 @@ public class AccountRegistrationPage extends BasePage {
 				return (msgConfirmation.getText());
 			} catch (Exception e) {
 				return (e.getMessage());
-
 			}
-
 		}
-		
-
-		
 }

@@ -1,5 +1,4 @@
-package Hooks;
-
+package stepsDefinitions;
 import factory.BaseClass;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -20,7 +19,7 @@ public class Hooks {
 	@Before
     public void setup() throws IOException
     {
-    	driver=BaseClass.initilizeBrowser();
+    	driver= BaseClass.initilizeBrowser();
     	    	
     	p=BaseClass.getProperties();
     	driver.get(p.getProperty("appURL"));
@@ -33,7 +32,7 @@ public class Hooks {
     }
     @AfterStep
     public void addScreenshot(Scenario scenario) {
-        
+        //Scenario is pre defined
     	// this is for cucumber junit report
         if(scenario.isFailed()) {
         	

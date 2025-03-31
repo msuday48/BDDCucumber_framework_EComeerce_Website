@@ -25,9 +25,7 @@ public class HomePage extends BasePage {
 	
 	@FindBy(xpath="//div[@id='search']//button[@type='button']") //For Search Product Test
 	WebElement btnSearch;
-	
-	
-		
+
 	// Action Methods
 	public void clickMyAccount() {
 		lnkMyaccount.click();
@@ -51,7 +49,4 @@ public class HomePage extends BasePage {
 	{
 		btnSearch.click();
 	}
-	
-	
-	
 }

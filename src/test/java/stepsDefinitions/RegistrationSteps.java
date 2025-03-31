@@ -10,9 +10,7 @@ import org.openqa.selenium.WebDriver;
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
-
 import java.util.Map;
-
 
 public class RegistrationSteps {
 
@@ -23,7 +21,6 @@ public class RegistrationSteps {
      
 	@Given("the user navigates to Register Account page")
 	public void user_navigates_to_register_account_page() {
-	
 		hp=new HomePage(BaseClass.getDriver());
     	hp.clickMyAccount();
         hp.clickRegister();
@@ -41,7 +38,6 @@ public class RegistrationSteps {
 		regpage.setTelephone(dataMap.get("telephone"));
 		regpage.setPassword(dataMap.get("password"));
 		regpage.setConfirmPassword(dataMap.get("password"));
-		
 	}
 
 	@When("the user selects Privacy Policy")
@@ -56,7 +52,6 @@ public class RegistrationSteps {
 
 	@Then("the user account should get created successfully")
 	public void user_account_should_get_created_successfully() {
-		
 		String confmsg=regpage.getConfirmationMsg();
 		Assert.assertEquals(confmsg, "Your Account Has Been Created!");
 		}
