@@ -10,4 +10,4 @@ Feature: Account Registration
       | password  | test@123   |
     And the user selects Privacy Policy
     And the user clicks on Continue button
-    Then the user account should get created successfully
+   Then the user account should get created successfully

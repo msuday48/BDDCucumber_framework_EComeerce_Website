@@ -15,10 +15,11 @@ public class CheckoutPage extends BasePage{
 	
 	@FindBy(xpath="//input[@id='input-payment-firstname']")
 	WebElement txtfirstName;
+
+
 	
 	@FindBy(xpath="//input[@id='input-payment-lastname']")
 	WebElement txtlastName;
-	
 
 	@FindBy(xpath="//input[@id='input-payment-address-1']")
 	WebElement txtaddress1;
@@ -29,12 +30,10 @@ public class CheckoutPage extends BasePage{
 	
 	@FindBy(xpath="//input[@id='input-payment-city']")
 	WebElement txtcity;
-	
-	
+
 	@FindBy(xpath="//input[@id='input-payment-postcode']")
 	WebElement txtpin;
-	
-	
+
 	@FindBy(xpath="//select[@id='input-payment-country']")
 	WebElement drpCountry;
 	
@@ -73,8 +72,6 @@ public class CheckoutPage extends BasePage{
 	
 	@FindBy(xpath="//*[@id='content']/h1")
 	WebElement lblOrderConMsg;
-	
-	
 
 	public void setfirstName(String firstName) {
 		txtfirstName.sendKeys(firstName);
@@ -150,7 +147,6 @@ public class CheckoutPage extends BasePage{
 	public String  getTotalPriceBeforeConfOrder()
 	{
 		return lblTotalPrice.getText(); //$207.00
-		
 	}
 	
 	public void clickOnConfirmOrder() {
@@ -173,7 +169,5 @@ public class CheckoutPage extends BasePage{
 		{
 			return false;
 		}
-		
 	}
-	
 }

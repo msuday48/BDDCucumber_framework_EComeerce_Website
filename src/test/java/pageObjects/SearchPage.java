@@ -77,6 +77,4 @@ public class SearchPage extends BasePage
 				return false;
 			}
 		}
-		
 }
-

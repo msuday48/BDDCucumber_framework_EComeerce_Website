@@ -10,9 +10,9 @@ import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.MyAccountPage;
 import utilities.DataReader;
-
 import java.util.HashMap;
 import java.util.List;
+
 
 public class LoginSteps {
      WebDriver driver;
@@ -21,8 +21,7 @@ public class LoginSteps {
      MyAccountPage macc;
   
      List<HashMap<String, String>> datamap; //Data driven
-     
-   
+
     @Given("the user navigates to login page")
     public void user_navigate_to_login_page() {
     	BaseClass.getLogger().info("Goto my account-->Click on Login.. ");
@@ -44,10 +43,7 @@ public class LoginSteps {
     public void click_on_login_button() {
         lp.clickLogin();
         BaseClass.getLogger().info("clicked on login button...");
-    	
-        
     }
-
 
     @Then("the user should be redirected to the MyAccount Page")
     public void user_navigates_to_my_account_page() {
@@ -55,7 +51,6 @@ public class LoginSteps {
 		boolean targetpage=macc.isMyAccountPageExists();
 				
 		Assert.assertEquals(targetpage, true);
-        
     }
 
     //*******   Data Driven test **************
@@ -108,9 +103,7 @@ public class LoginSteps {
         }
         catch(Exception e)
         {
-
             Assert.assertTrue(false);
         }
       }
- 
 }
