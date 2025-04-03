@@ -6,7 +6,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 					//features= {"C:\\Users\\ASUS\\Downloads\\BDD_Cucumber_framework_EComeerce_Website\\src\\test\\java\\features"},
-		features= {"C:\\Users\\ASUS\\Downloads\\BDD_Cucumber_framework_EComeerce_Website\\src\\test\\java\\features\\Login.feature"},
+		//features= {"C:\\Users\\ASUS\\Downloads\\BDD_Cucumber_framework_EComeerce_Website\\src\\test\\java\\features\\Login.feature"},
+		features= {"C:\\Users\\ASUS\\Downloads\\BDD_Cucumber_framework_EComeerce_Website\\src\\test\\java\\features\\SearchPage.feature"},
 
 		//features= {"C:\Users\ASUS\Downloads\BDD_Cucumber_framework_EComeerce_Website\src\test\java\features\LoginDDTExcel.feature"},
 				//	features= {"C:\Users\ASUS\Downloads\BDD_Cucumber_framework_EComeerce_Website\src\test\java\features\Login.feature","C:\Users\ASUS\Downloads\BDD_Cucumber_framework_EComeerce_Website\src\test\java\features\Registration.feature"},

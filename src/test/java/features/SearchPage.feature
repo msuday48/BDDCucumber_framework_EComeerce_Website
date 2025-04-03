@@ -1,11 +1,14 @@
-Feature: Product search in Serach bar in Homepage
+Feature: Product Search Functionality on Homepage
 
+  @regression
+  Scenario Outline: Validating the search functionality with valid product names
+    Given the user navigates to the login page
+    And User enters valid email as "msuday48@gmail.com" and password as "Uday@151997" and clicks on the login button
+    When Home page is displayed, the user clicks on the search bar, enters a valid "<product>" name, and clicks on the search icon
+    Then the user should see the searched product page
 
-
-@regression
-  Scenario: Validating the working of search functionality**
-
-  Given the user navigates to the login page
-  And User enters valid username and password and clicks on login button
-  And Home page is displayed  user clicks on the search bar enters valid product name clicks on search icon
-  Then user serached product page is displayed
+    Examples:
+      | product |
+      | Mac     |
+      | iPhone  |
+      | Laptop  |
