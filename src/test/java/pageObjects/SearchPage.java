@@ -40,7 +40,7 @@ public class SearchPage extends BasePage
 			}
 			
 			return flag;
-		
+		//
 		}
 		
 		public void selectProduct(String productName)
