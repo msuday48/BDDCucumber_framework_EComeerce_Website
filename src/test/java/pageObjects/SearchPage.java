@@ -38,7 +38,7 @@ public class SearchPage extends BasePage
 				break;
 				}
 			}
-			
+			//
 			return flag;
 		//
 		}
