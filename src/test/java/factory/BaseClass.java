@@ -106,14 +106,11 @@ BaseClass {
 		String generatedString=RandomStringUtils.randomNumeric(10);
 		return generatedString;
 	}
-	
-		
+
 	public static String randomAlphaNumeric()
 	{
 	String str=RandomStringUtils.randomAlphabetic(5);
 	 String num=RandomStringUtils.randomNumeric(10);
 	return str+num;
 	}
-	
-	
 }

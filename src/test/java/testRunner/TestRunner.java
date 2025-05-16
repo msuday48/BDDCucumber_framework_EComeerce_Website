@@ -7,11 +7,14 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 					//features= {"C:\\Users\\ASUS\\Downloads\\BDD_Cucumber_framework_EComeerce_Website\\src\\test\\java\\features"},
 		//features= {"C:\\Users\\ASUS\\Downloads\\BDD_Cucumber_framework_EComeerce_Website\\src\\test\\java\\features\\Login.feature"},
-		features= {"C:\\Users\\ASUS\\Downloads\\BDD_Cucumber_framework_EComeerce_Website\\src\\test\\java\\features\\SearchPage.feature"},
+		//features= {"C:\\Users\\ASUS\\Downloads\\BDD_Cucumber_framework_EComeerce_Website\\src\\test\\java\\features\\SearchPage.feature"},
+		features={"C:\\Users\\ASUS\\Downloads\\BDD_Cucumber_framework_EComeerce_Website\\src\\test\\java\\features\\checkout.feature"},
 
+		// features={"C:\\Users\\ASUS\\Downloads\\BDD_Cucumber_framework_EComeerce_Website\\src\\test\\java\\features\\Product_Page.feature"},
 		//features= {"C:\Users\ASUS\Downloads\BDD_Cucumber_framework_EComeerce_Website\src\test\java\features\LoginDDTExcel.feature"},
 				//	features= {"C:\Users\ASUS\Downloads\BDD_Cucumber_framework_EComeerce_Website\src\test\java\features\Login.feature","C:\Users\ASUS\Downloads\BDD_Cucumber_framework_EComeerce_Website\src\test\java\features\Registration.feature"},
 					//features= {"@target/rerun.txt"},
+
 					glue={"stepsDefinitions","hooks"},
 		plugin = {
 				"pretty",  // Formats the console output in a readable format (better debugging)

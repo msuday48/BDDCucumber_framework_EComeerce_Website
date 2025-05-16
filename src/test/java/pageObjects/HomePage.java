@@ -19,12 +19,15 @@ public class HomePage extends BasePage {
 
 	@FindBy(linkText = "Login")   // Login link added in step6
 	WebElement linkLogin;
-	
-	@FindBy(xpath="//input[@placeholder='Search']")  //For Search Product Test
+
+	@FindBy(xpath = "//input[@placeholder='Search']")  //For Search Product Test
 	WebElement txtSearchbox;
-	
-	@FindBy(xpath="//div[@id='search']//button[@type='button']") //For Search Product Test
+
+	@FindBy(xpath = "//div[@id='search']//button[@type='button']") //For Search Product Test
 	WebElement btnSearch;
+
+	@FindBy(xpath = "//span[normalize-space()='Checkout']")
+	WebElement checkoutbutton;
 
 	// Action Methods
 	public void clickMyAccount() {
@@ -34,19 +37,23 @@ public class HomePage extends BasePage {
 	public void clickRegister() {
 		lnkRegister.click();
 	}
-	
+
 	public void clickLogin()    // added in step6
 	{
 		linkLogin.click();
 	}
-	
+
 	public void enterProductName(String pName)   //For Search Product Test
 	{
 		txtSearchbox.sendKeys(pName);
 	}
-	
+
 	public void clickSearch()  //For Search Product Test
 	{
 		btnSearch.click();
+	}
+
+	public void click_checkout() {
+		checkoutbutton.click();
 	}
 }

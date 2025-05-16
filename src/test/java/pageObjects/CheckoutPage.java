@@ -7,27 +7,23 @@ import org.openqa.selenium.support.ui.Select;
 
 public class CheckoutPage extends BasePage{
 
-	
 	public CheckoutPage(WebDriver driver)
 	{
 		super(driver);
-	}	
-	
-	@FindBy(xpath="//input[@id='input-payment-firstname']")
+	}
+
+	@FindBy(xpath="//input[@name='firstname']")
 	WebElement txtfirstName;
 
-
-	
-	@FindBy(xpath="//input[@id='input-payment-lastname']")
+	@FindBy(xpath="//input[@placeholder='Last Name'] [@name='lastname']")
 	WebElement txtlastName;
 
-	@FindBy(xpath="//input[@id='input-payment-address-1']")
+	@FindBy(xpath="//input[@id='input-payment-company']")
 	WebElement txtaddress1;
-	
-	@FindBy(xpath="//input[@id='input-payment-address-2']")
+
+	@FindBy(xpath="//input[@name='address_1' and @placeholder='Address 1']")
 	WebElement txtaddress2;
-	
-	
+
 	@FindBy(xpath="//input[@id='input-payment-city']")
 	WebElement txtcity;
 
@@ -36,47 +32,40 @@ public class CheckoutPage extends BasePage{
 
 	@FindBy(xpath="//select[@id='input-payment-country']")
 	WebElement drpCountry;
-	
-	
+
 	@FindBy(xpath="//select[@id='input-payment-zone']")
 	WebElement drpState;
 
 	@FindBy(xpath="//input[@id='button-payment-address']")
 	WebElement btncontinueBillingAddress;
-	
+
 	@FindBy(xpath="//input[@id='button-shipping-address']")
 	WebElement btncontinueDeliveryAddress;
-	
+
 	@FindBy(xpath="//textarea[@name='comment']")
 	WebElement txtDeliveryMethod;
-	
+
 	@FindBy(xpath="//input[@id='button-shipping-method']")
 	WebElement btncontinueShippingAddress;
-	
-	
+
 	@FindBy(xpath="//input[@name='agree']")
 	WebElement chkboxTerms;
-	
-	
+
 	@FindBy(xpath="//input[@id='button-payment-method']")
 	WebElement btncontinuePaymentMethod;
-	
-	
+
 	@FindBy(xpath="//strong[text()='Total:']//following::td")
 	WebElement lblTotalPrice;
-	
-	
+
 	@FindBy(xpath="//input[@id='button-confirm']")
 	WebElement btnConfOrder;
-	
-	
+
 	@FindBy(xpath="//*[@id='content']/h1")
 	WebElement lblOrderConMsg;
 
-	public void setfirstName(String firstName) {
+	public void setfirstName(String firstName){
 		txtfirstName.sendKeys(firstName);
 	}
-
 
 	public void setlastName(String lastName) {
 		txtlastName.sendKeys(lastName);
@@ -104,55 +93,55 @@ public class CheckoutPage extends BasePage{
 
 
 	public void setCountry(String Country) {
-		new Select(drpCountry).selectByVisibleText(Country);
+	Select ab=	new Select(drpCountry);
+	ab.selectByVisibleText(Country);
 	}
 
 
 	public void setState(String State) {
 		new Select(drpState).selectByVisibleText(State);
 	}
-	
+
 	public void clickOnContinueAfterBillingAddress()
 	{
 		btncontinueBillingAddress.click();
 	}
-	
+
 	public void clickOnContinueAfterDeliveryAddress()
 	{
 		btncontinueDeliveryAddress.click();
 	}
-	
-	
+
 	public void setDeliveryMethodComment(String deliverymsg)
 	{
 		txtDeliveryMethod.sendKeys(deliverymsg);
-		
 	}
-	
+
 	public void clickOnContinueAfterDeliveryMethod()
 	{
 		btncontinueShippingAddress.click();
 	}
-	
+
 	public void selectTermsAndConditions()
 	{
 		chkboxTerms.click();
 	}
-	
+
 	public void clickOnContinueAfterPaymentMethod()
 	{
 		btncontinuePaymentMethod.click();
 	}
-	
+
 	public String  getTotalPriceBeforeConfOrder()
 	{
 		return lblTotalPrice.getText(); //$207.00
 	}
-	
+
+
 	public void clickOnConfirmOrder() {
 		btnConfOrder.click();
 	}
-	
+
 	public boolean isOrderPlaced() throws InterruptedException
 	{
 		try
