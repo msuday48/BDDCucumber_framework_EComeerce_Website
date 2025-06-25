@@ -12,7 +12,7 @@ public class SearchPage extends BasePage {
 	public SearchPage(WebDriver driver) {
 		super(driver);
 	}
-
+//
 	@FindBy(xpath = "//a[normalize-space()='MacBook']")
 	WebElement Mac_Product;
 

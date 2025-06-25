@@ -17,7 +17,10 @@ public class Hooks {
 	 Properties p;
      
 	@Before
-    public void setup() throws IOException
+    public void setup(
+
+
+    ) throws IOException
     {
     	driver= BaseClass.initilizeBrowser();
     	    	
